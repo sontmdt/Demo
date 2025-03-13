@@ -10,4 +10,5 @@ Trong đó:
 + State Pattern: Sử dụng trong việc quản lý trạng thái Enemy (Chase, Attack ,...) và trạng thái của Game (Lose, Win, Pause ,...)
 + Strategy Pattern: Xây dựng hệ thống chiêu thức gồm 4 chiêu kể trên và các chiêu thức của Enemy
 + Observer Pattern: Cập nhật trạng thái UI chẳng hạn như kho đồ (Khi nhặt Item) hoặc trạng thái thanh máu của Player và Enemy
+
 Ngoài ra việc xuất ra skill và enemy sử dụng Pooling Object và lưu trữ các thông tin về kỹ năng, item với Scriptable Object
