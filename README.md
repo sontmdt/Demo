@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c27930fb-a998-4468-b87b-da6dac8192c5)Game lấy ý tưởng từ vòng farm quái của game quỷ cốc bát hoang
+Game lấy ý tưởng từ vòng farm quái của game quỷ cốc bát hoang
 
 Nhân vật sẽ có 4 kỹ năng: Đánh thường (Chuột trái) , chiêu cơ bản (Chuột phải) , chiêu hỗ trợ di chuyển (Space) và ultimate (R)
 
