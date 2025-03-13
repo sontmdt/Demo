@@ -31,7 +31,13 @@ public class PlayerMovement : PlayerAbstract
     protected virtual void Movement()
     {
         Vector2 movePos = PlayerCtrl._Rigidbody.position;
-        PlayerCtrl._Rigidbody.MovePosition(movePos + movement * moveSpeed * Time.fixedDeltaTime);
+        //PlayerCtrl._Rigidbody.MovePosition(movePos + movement * moveSpeed * Time.fixedDeltaTime);
+        RaycastHit2D hit = Physics2D.Raycast(movePos, movement, moveSpeed * Time.fixedDeltaTime, LayerMask.GetMask("Wall"));
+
+        if (hit.collider == null) 
+        {
+            PlayerCtrl._Rigidbody.MovePosition(movePos + movement * moveSpeed * Time.fixedDeltaTime);
+        }
         if (movement == Vector2.zero) return;
         stepTimer += Time.fixedDeltaTime;
         if (stepTimer >= stepDelay)

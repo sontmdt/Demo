@@ -41,6 +41,10 @@ public class InputManager : Singleton<InputManager>
     {
         this.movement.x = Input.GetAxisRaw("Horizontal");
         this.movement.y = Input.GetAxisRaw("Vertical");
+        if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
+            movement.y = 0;
+        else
+            movement.x = 0;
     }
     protected virtual void GetMousePos()
     {
